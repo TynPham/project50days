@@ -2,7 +2,8 @@ const container = document.querySelector('.container');
 
 window.addEventListener('keydown' , function(e) {
     container.innerHTML = `
-    <button class="btn key">${e.key}
+    <button class="btn key">
+    ${e.keyCode === 32 ? 'Space' : e.key}
         <small>event.key</small>
     </button>
     <button class="btn keycode">${e.keyCode}

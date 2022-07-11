@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    font-family: 'Mulish', sans-serif;
+}
+h1 {
+    text-align: center;
+    margin: 50px 0 30px 0;
+}
+.faq__container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.faq {
+    border: 1px solid #abafb3;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    margin: 30px 0;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+}
+.faq.active p {
+    display: block;
+}
+.faq.active {
+    background-color: #fff;
+}
+h3 {
+    margin: 30px;
+}
+p {
+    display: none;
+    margin: 25px 30px;
+}
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    font-size: 20px;
+    top: 30px;
+    right: 40px;
+    cursor: pointer;
+}
+.faq .fa-xmark {
+    display: none;
+}
+.faq.active .fa-angle-down {
+    display: none;
+}
+.faq.active .fa-xmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #9fa4a8;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    color: #fff;
+    transform: translateX(8px);
+    cursor: pointer;
+}
+
+.faq.active::before,
+.faq.active::after {
+    content: '\f075';
+    position: absolute;
+    font-size: 7rem;
+    font-family: 'Font Awesome 5 Free';
+    color: #2ecc71;
+    opacity: 0.2;
+    z-index: 0;
+    left: 20px;
+    top: 20px;
+}
+.faq.active::before {
+    color: #3498db;
+    left: -30px;
+    top: -10px;
+    transform: rotateY(180deg);
+}

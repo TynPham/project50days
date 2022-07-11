@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    padding: 21px 31px;
+    color: #fff;
+    background-color: #800080;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span {
+    width: 100px;;
+    height: 100px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(-50% , -50%) scale(0);
+    animation: scale 0.5s ease-out;
+}
+@keyframes scale {
+    to {
+        transform: translate(-50% , -50%) scale(3);
+        opacity: 0;
+    }
+}
