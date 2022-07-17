@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Ui Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="question">
+            <h4>How satisfied are you with our
+                customer support performance?</h4>
+        </div>
+        <ul class="feedback">
+            <li class="feel">
+                <i class="fa-solid fa-face-frown"></i>
+                <span>Unhappy</span>
+            </li>
+            <li class="feel">
+                <i class="fa-solid fa-face-meh"></i>
+                <span>Neutral</span>
+            </li>
+            <li class="feel">
+                <i class="fa-solid fa-face-smile"></i>
+                <span>Satisfied</span>
+            </li>
+        </ul>
+        <button class="send">Send Review</button>
+    </div>
+    <div class="thank-you hide">
+        <i class="fa-solid fa-heart"></i>
+        <h5>Thank You!</h5>
+        <h4 class="result"></h4>
+        <small>We'll use your feedback to improve our customer support</small>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
